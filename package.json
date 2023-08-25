@@ -13,6 +13,6 @@
   "license": "MIT",
   "devDependencies": {
     "prettier": "^3.0.2",
-    "renovate": "^36.54.3"
+    "renovate": "^36.55.0"
   }
 }
