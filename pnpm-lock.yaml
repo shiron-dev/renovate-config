@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^3.0.3
     version: 3.0.3
   renovate:
-    specifier: ^36.109.4
-    version: 36.109.4(typanion@3.12.1)
+    specifier: ^37.34.2
+    version: 37.36.2(typanion@3.12.1)
 
 packages:
 
@@ -976,8 +976,8 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@cdktf/hcl2json@0.18.0:
-    resolution: {integrity: sha512-wnnGTdXExmG+HCLsAsce3fOTDBpj8MpadMzKU7hxj+/xdGvACnU0JB7wcK0FRIKlbJFmxgwYzFmVrgd7z3Be/g==}
+  /@cdktf/hcl2json@0.19.0:
+    resolution: {integrity: sha512-wo68qo74dTxcZWJkwlhTV+YoVopUUUTpRC8W73HWkaL/lw6GDozh4GHwphagIHYJy07Ecxdx/WTp0sGDBaFBuQ==}
     dependencies:
       fs-extra: 11.1.1
     dev: true
@@ -1221,15 +1221,15 @@ packages:
       '@opentelemetry/sdk-trace-base': 1.17.0(@opentelemetry/api@1.6.0)
     dev: true
 
-  /@opentelemetry/instrumentation-bunyan@0.32.1(@opentelemetry/api@1.6.0):
-    resolution: {integrity: sha512-TjH357ldA5DpK09XUDWffqV9Km++N9H0dwmxHrElM2TSe4Usgkgw6mlodbuh45hoVDD+cCPi+GO6Dq1QLVEdZg==}
+  /@opentelemetry/instrumentation-bunyan@0.32.2(@opentelemetry/api@1.6.0):
+    resolution: {integrity: sha512-/sLChixYxFas7c5SbLLGUq2yKmU8c58IPlYNNqRSiT0epouqeBjxNUwQeizXl6Ba5+T/Yq7cwCVjh72CRb3tlA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@opentelemetry/api': ^1.3.0
     dependencies:
       '@opentelemetry/api': 1.6.0
-      '@opentelemetry/instrumentation': 0.41.2(@opentelemetry/api@1.6.0)
-      '@types/bunyan': 1.8.8
+      '@opentelemetry/instrumentation': 0.44.0(@opentelemetry/api@1.6.0)
+      '@types/bunyan': 1.8.9
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1249,8 +1249,8 @@ packages:
       - supports-color
     dev: true
 
-  /@opentelemetry/instrumentation@0.41.2(@opentelemetry/api@1.6.0):
-    resolution: {integrity: sha512-rxU72E0pKNH6ae2w5+xgVYZLzc5mlxAbGzF4shxMVK8YC2QQsfN38B2GPbj0jvrKWWNUElfclQ+YTykkNg/grw==}
+  /@opentelemetry/instrumentation@0.43.0(@opentelemetry/api@1.6.0):
+    resolution: {integrity: sha512-S1uHE+sxaepgp+t8lvIDuRgyjJWisAb733198kwQTUc9ZtYQ2V2gmyCtR1x21ePGVLoMiX/NWY7WA290hwkjJQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@opentelemetry/api': ^1.3.0
@@ -1265,8 +1265,8 @@ packages:
       - supports-color
     dev: true
 
-  /@opentelemetry/instrumentation@0.43.0(@opentelemetry/api@1.6.0):
-    resolution: {integrity: sha512-S1uHE+sxaepgp+t8lvIDuRgyjJWisAb733198kwQTUc9ZtYQ2V2gmyCtR1x21ePGVLoMiX/NWY7WA290hwkjJQ==}
+  /@opentelemetry/instrumentation@0.44.0(@opentelemetry/api@1.6.0):
+    resolution: {integrity: sha512-B6OxJTRRCceAhhnPDBshyQO7K07/ltX3quOLu0icEvPK9QZ7r9P1y0RQX8O5DxB4vTv4URRkxkg+aFU/plNtQw==}
     engines: {node: '>=14'}
     peerDependencies:
       '@opentelemetry/api': ^1.3.0
@@ -1542,13 +1542,13 @@ packages:
       - encoding
     dev: true
 
-  /@renovatebot/pep440@3.0.8:
-    resolution: {integrity: sha512-Sf1B1AziXTD4tdL5dDuBjrQl/ivlNm8ACtlLj3vA4zqQ4AKAa+giYyIFKvDNiF15p8X7RBX75T96M8vd+gMsdg==}
+  /@renovatebot/pep440@3.0.9:
+    resolution: {integrity: sha512-iyO66zZdtBegsbMzr/67U8l+vAbJLSGyJu/n0A5CCXAl+tGk+otlsINlC2CHTwlkI0rGe9kXyTqWls6/igOQDg==}
     engines: {node: ^18.12.0 || >= 20.0.0, pnpm: ^8.6.11}
     dev: true
 
-  /@renovatebot/ruby-semver@3.0.15:
-    resolution: {integrity: sha512-f4HN4BTqP0LqVELXIfZYVbFtcnX2jsUGlCrd/l4GubI5n0UVpuPb1Qfn8H1IqL/WrcWHD2itNDcLr2eemc/Nig==}
+  /@renovatebot/ruby-semver@3.0.16:
+    resolution: {integrity: sha512-KT6vKk4OYdb3Gmfve0RVWTpsz56LxK1YOVQ822sH39kWSrOTRbeb1cbXBdeLwvpAhDFX8TCs5lBJnSvIQOgwpg==}
     engines: {node: ^18.12.0 || >= 20.0.0, pnpm: ^8.6.11}
     dev: true
 
@@ -2017,8 +2017,8 @@ packages:
     dev: true
     optional: true
 
-  /@types/bunyan@1.8.8:
-    resolution: {integrity: sha512-Cblq+Yydg3u+sGiz2mjHjC5MPmdjY+No4qvHrF+BUhblsmSfMvsHLbOG62tPbonsqBj6sbWv1LHcsoe5Jw+/Ow==}
+  /@types/bunyan@1.8.9:
+    resolution: {integrity: sha512-ZqS9JGpBxVOvsawzmVt30sP++gSQMTejCkIAQ3VdadOcRE8izTyW66hufvwLeH+YEGP6Js2AW7Gz+RMyvrEbmw==}
     dependencies:
       '@types/node': 20.2.3
     dev: true
@@ -2060,8 +2060,8 @@ packages:
     resolution: {integrity: sha512-eXQpwnkI4Ntw5uJg6i2PINdRFWLr55dqjuYQaLHNjvqTzF14QdNWbCbml9sza0byyXNA0hZlHtcdN+VNDcgVHA==}
     dev: true
 
-  /@types/ms@0.7.31:
-    resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
+  /@types/ms@0.7.33:
+    resolution: {integrity: sha512-AuHIyzR5Hea7ij0P9q7vx7xu4z0C28ucwjAZC0ja7JhINyCnOw8/DnvAPQQ9TfOlCtZAmCERKQX9+o1mgQhuOQ==}
     dev: true
 
   /@types/node@13.13.52:
@@ -2090,8 +2090,8 @@ packages:
     resolution: {integrity: sha512-dKkr1bTxbEsFlh2ARpKzcaAmsYixqt9UyCdoEZk8rHyE4iQYcDCyvSjDSf7JUWJHlJiTtbIoQjxKh6ViywqDAg==}
     dev: true
 
-  /@types/tmp@0.2.4:
-    resolution: {integrity: sha512-Vq3rwM+2KgiLacq68EjTJD9cuJ/ne5pXntWn8B8Rxj25SLkGAhCgooCZ1lhcIcV5OFveJ+s5Cqpi+XKfFM/xZA==}
+  /@types/tmp@0.2.5:
+    resolution: {integrity: sha512-KodRrjqWrk/3VyzfR4aeXkf2n5Ssg+bvVUhXlvHVffLiIHriLlrO3vYobB+Kvnr9DkNzMiyWHT3G6hT/xX0ryQ==}
     dev: true
 
   /@types/treeify@1.0.0:
@@ -2110,8 +2110,8 @@ packages:
     dev: true
     optional: true
 
-  /@yarnpkg/core@3.5.3(typanion@3.12.1):
-    resolution: {integrity: sha512-yyU/fA2aWQ53KD5vsthJRJKhNO4zFgaKLNM3X6JgfUPfLLNQJxHvFpB4+X+v9HxceokiDGx3hp0DaAUWjO2mEw==}
+  /@yarnpkg/core@3.5.4(typanion@3.12.1):
+    resolution: {integrity: sha512-iIOoFnGOXP3LLxg0RiRIUB1n55bY0R1BRxxKsA2CtNeivR4wyBh/828SamthVzkKbsUs6y9q7U+1RMn9fEEHFg==}
     engines: {node: '>=12 <14 || 14.2 - 14.9 || >14.10.0'}
     dependencies:
       '@arcanis/slice-ansi': 1.1.1
@@ -2121,7 +2121,7 @@ packages:
       '@yarnpkg/json-proxy': 2.1.1
       '@yarnpkg/libzip': 2.3.0
       '@yarnpkg/parsers': 2.5.1
-      '@yarnpkg/pnp': 3.3.4
+      '@yarnpkg/pnp': 3.3.5
       '@yarnpkg/shell': 3.2.5(typanion@3.12.1)
       camelcase: 5.3.1
       chalk: 3.0.0
@@ -2182,8 +2182,8 @@ packages:
       tslib: 1.14.1
     dev: true
 
-  /@yarnpkg/pnp@3.3.4:
-    resolution: {integrity: sha512-fbDEY2WlbrwSuQbwL9xD9eTUzIZUE/Pk3hNiw4PTqUbAF9H5m1Dh3qRQDe10pnacpIMvfNfgLe0XidlEd/SoLA==}
+  /@yarnpkg/pnp@3.3.5:
+    resolution: {integrity: sha512-VKfOriFOKfclaL/f5+qEKyqBmWpYuRkgyutcf3tgysisw2G9MQkJWNoYpn/A6RHAZRTQJKFU3wtvBjSSjpu67A==}
     engines: {node: '>=12 <14 || 14.2 - 14.9 || >14.10.0'}
     dependencies:
       '@types/node': 13.13.52
@@ -2468,7 +2468,7 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.0
       fs-minipass: 3.0.2
-      glob: 10.3.4
+      glob: 10.3.10
       lru-cache: 7.18.3
       minipass: 7.0.3
       minipass-collect: 1.0.2
@@ -2487,7 +2487,7 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.0
       fs-minipass: 3.0.2
-      glob: 10.3.4
+      glob: 10.3.10
       lru-cache: 10.0.1
       minipass: 7.0.3
       minipass-collect: 1.0.2
@@ -2657,8 +2657,8 @@ packages:
     dev: true
     optional: true
 
-  /commander@11.0.0:
-    resolution: {integrity: sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==}
+  /commander@11.1.0:
+    resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
     dev: true
 
@@ -2868,7 +2868,7 @@ packages:
     hasBin: true
     dependencies:
       '@one-ini/wasm': 0.1.1
-      commander: 11.0.0
+      commander: 11.1.0
       minimatch: 9.0.2
       semver: 7.5.4
     dev: true
@@ -2877,8 +2877,8 @@ packages:
     resolution: {integrity: sha512-4OIPYlA6JXqtVn8zpHpGiI7vE6EQOAg16aGnDMIAlZVinnoZ8208tW1hAbjWydgN/4PLTT9q+O1K6AH/vALJGw==}
     dev: true
 
-  /emoji-regex@10.2.1:
-    resolution: {integrity: sha512-97g6QgOk8zlDRdgq1WxwgTMgEWGVAQvB5Fdpgc1MkNy56la5SKP9GsMXKDOdqwn90/41a8yPwIGk1Y6WVbeMQA==}
+  /emoji-regex@10.3.0:
+    resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
     dev: true
 
   /emoji-regex@8.0.0:
@@ -2890,12 +2890,12 @@ packages:
     resolution: {integrity: sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==}
     dev: true
 
-  /emojibase-regex@15.0.0:
-    resolution: {integrity: sha512-b5y58xrmZhH551zIa3ZOHl1mRI5KecA+5sAyWZCQEaj1maufZJJoENVwDqigzJoAkG604DuRqfdpy4E5rzSUsg==}
+  /emojibase-regex@15.2.0:
+    resolution: {integrity: sha512-65H5YepRW3gdrghV/Ed9kW3Qry8/qeKJmMlm31nTsOrEZfuAgyr28FmloXpyak86+chR8cukZA7dlafZzrJXbw==}
     dev: true
 
-  /emojibase@15.0.0:
-    resolution: {integrity: sha512-bvSIs98sHaVnyKPmW+obRjo49MFx0g+rhfSz6mTePAagEZSlDPosq0b6AcSJa5gt48z3VP2ooXclyBs8vIkpGA==}
+  /emojibase@15.2.0:
+    resolution: {integrity: sha512-gB6rIVtyJPersQvAo4nOGYPeILMhlcfZdiwCWVeRAtkJ7sm0tExZETGyLhrTQcHvZQhDEYI1vlCeqUhn5gZkQA==}
     dev: true
 
   /encoding@0.1.13:
@@ -3190,8 +3190,8 @@ packages:
       parse-url: 8.1.0
     dev: true
 
-  /git-url-parse@13.1.0:
-    resolution: {integrity: sha512-5FvPJP/70WkIprlUZ33bm4UAaFdjcLkJLpWft1BeZKqwR0uhhNGoKwlUaPtVb4LxCSQ++erHapRak9kWGj+FCA==}
+  /git-url-parse@13.1.1:
+    resolution: {integrity: sha512-PCFJyeSSdtnbfhSNRw9Wk96dDCNx+sogTe4YNXeXSJxt7xz5hvXekuRn9JX7m+Mf4OscCu8h+mtAl3+h5Fo8lQ==}
     dependencies:
       git-up: 7.0.0
     dev: true
@@ -3207,13 +3207,13 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.3.4:
-    resolution: {integrity: sha512-6LFElP3A+i/Q8XQKEvZjkEWEOTgAIALR9AO2rwT8bgPhDd1anmqDJDZ6lLddI4ehxxxR1S5RIqKe1uapMQfYaQ==}
+  /glob@10.3.10:
+    resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
       foreground-child: 3.1.1
-      jackspeak: 2.2.1
+      jackspeak: 2.3.6
       minimatch: 9.0.3
       minipass: 7.0.3
       path-scurry: 1.10.1
@@ -3285,8 +3285,8 @@ packages:
       moo: 0.5.2
     dev: true
 
-  /google-auth-library@9.0.0:
-    resolution: {integrity: sha512-IQGjgQoVUAfOk6khqTVMLvWx26R+yPw9uLyb1MNyMQpdKiKt0Fd9sp4NWoINjyGHR8S3iw12hMTYK7O8J07c6Q==}
+  /google-auth-library@9.1.0:
+    resolution: {integrity: sha512-1M9HdOcQNPV5BwSXqwwT238MTKodJFBxZ/V2JP397ieOLv4FjQdfYb9SooR7Mb+oUT2IJ92mLJQf804dyx0MJA==}
     engines: {node: '>=14'}
     dependencies:
       base64-js: 1.5.1
@@ -3409,14 +3409,6 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
-    dev: true
-
-  /hasha@5.2.2:
-    resolution: {integrity: sha512-Hrp5vIK/xr5SkeN2onO32H0MgNZ0f17HRNH39WfL0SYUNOTZ5Lz1TJ8Pajo/87dYGEFlLMm7mIc/k/s6Bvz9HQ==}
-    engines: {node: '>=8'}
-    dependencies:
-      is-stream: 2.0.1
-      type-fest: 0.8.1
     dev: true
 
   /he@1.2.0:
@@ -3698,8 +3690,8 @@ packages:
     requiresBuild: true
     dev: true
 
-  /jackspeak@2.2.1:
-    resolution: {integrity: sha512-MXbxovZ/Pm42f6cDIDkl3xpwv1AGwObKwfmjs2nQePiy85tP3fatofl3FC1aBsOtP/6fq5SbtgHwWcMsLP+bDw==}
+  /jackspeak@2.3.6:
+    resolution: {integrity: sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ==}
     engines: {node: '>=14'}
     dependencies:
       '@isaacs/cliui': 8.0.2
@@ -3927,8 +3919,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /markdown-it@13.0.1:
-    resolution: {integrity: sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==}
+  /markdown-it@13.0.2:
+    resolution: {integrity: sha512-FtwnEuuK+2yVU7goGn/MJ0WBZMM9ZPgU9spqlFs7/A/pDIUNSOQZhUgOqYCficIuR2QaFnrt8LHqBWsbTAoI5w==}
     hasBin: true
     dependencies:
       argparse: 2.0.1
@@ -4220,6 +4212,12 @@ packages:
 
   /nan@2.17.0:
     resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /nan@2.18.0:
+    resolution: {integrity: sha512-W7tfG7vMOGtD30sHoZSSc/JVYiyDPEyQVso/Zz+/uQd0B0L46gtC+pHha5FFMRpil6fm/AoEcRWyOVi4+E/f8w==}
     requiresBuild: true
     dev: true
     optional: true
@@ -4647,12 +4645,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /re2@1.20.3:
-    resolution: {integrity: sha512-g5j4YjygwGEccP9SCuDI90uPlgALLEYLotfL0K+kqL3XKB4ht7Nm1JuXfOTG96c7JozpvCUxTz1T7oTNwwMI6w==}
+  /re2@1.20.5:
+    resolution: {integrity: sha512-wZAqOjJ3m0PBgM2B8KG9dNJLwSNIAOZGiHN/c0FpKpaM1Hkg5NpKNAWSVbCXe+bb2K0xmHz6DPR4HJaQ2MejgQ==}
     requiresBuild: true
     dependencies:
       install-artifact-from-github: 1.3.3
-      nan: 2.17.0
+      nan: 2.18.0
       node-gyp: 9.4.0
     transitivePeerDependencies:
       - supports-color
@@ -4766,8 +4764,8 @@ packages:
       - supports-color
     dev: true
 
-  /renovate@36.109.4(typanion@3.12.1):
-    resolution: {integrity: sha512-dPPOQAnGOQxe0bdpqGYdmUg9/frRt/qbq7/+U+gKRAiPOQlhaCWzz+FeRzaWzbpcS1boImc2k7iWmWU99Y51tg==}
+  /renovate@37.36.2(typanion@3.12.1):
+    resolution: {integrity: sha512-cAdCCQcVl6aEHtHielYiWvybUj8McPhRNUg/59lQ/pkMaRiudo5w2AB/xLpuUt7D1j3heIC/50SjRMDoDc1BNg==}
     engines: {node: ^18.12.0 || >=20.0.0, pnpm: ^8.0.0}
     hasBin: true
     dependencies:
@@ -4778,13 +4776,13 @@ packages:
       '@aws-sdk/client-s3': 3.363.0
       '@aws-sdk/credential-providers': 3.363.0
       '@breejs/later': 4.1.0
-      '@cdktf/hcl2json': 0.18.0
+      '@cdktf/hcl2json': 0.19.0
       '@iarna/toml': 3.0.0
       '@opentelemetry/api': 1.6.0
       '@opentelemetry/context-async-hooks': 1.17.0(@opentelemetry/api@1.6.0)
       '@opentelemetry/exporter-trace-otlp-http': 0.43.0(@opentelemetry/api@1.6.0)
       '@opentelemetry/instrumentation': 0.43.0(@opentelemetry/api@1.6.0)
-      '@opentelemetry/instrumentation-bunyan': 0.32.1(@opentelemetry/api@1.6.0)
+      '@opentelemetry/instrumentation-bunyan': 0.32.2(@opentelemetry/api@1.6.0)
       '@opentelemetry/instrumentation-http': 0.43.0(@opentelemetry/api@1.6.0)
       '@opentelemetry/resources': 1.17.0(@opentelemetry/api@1.6.0)
       '@opentelemetry/sdk-trace-base': 1.17.0(@opentelemetry/api@1.6.0)
@@ -4792,12 +4790,12 @@ packages:
       '@opentelemetry/semantic-conventions': 1.17.0
       '@qnighy/marshal': 0.1.3
       '@renovatebot/osv-offline': 1.3.7
-      '@renovatebot/pep440': 3.0.8
-      '@renovatebot/ruby-semver': 3.0.15
+      '@renovatebot/pep440': 3.0.9
+      '@renovatebot/ruby-semver': 3.0.16
       '@sindresorhus/is': 4.6.0
-      '@types/ms': 0.7.31
-      '@types/tmp': 0.2.4
-      '@yarnpkg/core': 3.5.3(typanion@3.12.1)
+      '@types/ms': 0.7.33
+      '@types/tmp': 0.2.5
+      '@yarnpkg/core': 3.5.4(typanion@3.12.1)
       '@yarnpkg/parsers': 2.5.1
       agentkeepalive: 4.5.0
       aggregate-error: 3.1.0
@@ -4810,7 +4808,7 @@ packages:
       chalk: 4.1.2
       changelog-filename-regex: 2.0.1
       clean-git-ref: 2.0.1
-      commander: 11.0.0
+      commander: 11.1.0
       conventional-commits-detector: 1.0.3
       cron-parser: 4.9.0
       deepmerge: 4.3.1
@@ -4818,23 +4816,22 @@ packages:
       detect-indent: 6.1.0
       editorconfig: 2.0.0
       email-addresses: 5.0.0
-      emoji-regex: 10.2.1
-      emojibase: 15.0.0
-      emojibase-regex: 15.0.0
+      emoji-regex: 10.3.0
+      emojibase: 15.2.0
+      emojibase-regex: 15.2.0
       extract-zip: 2.0.1
       find-packages: 10.0.4
       find-up: 5.0.0
       fs-extra: 11.1.1
-      git-url-parse: 13.1.0
+      git-url-parse: 13.1.1
       github-url-from-git: 1.5.0
-      glob: 10.3.4
+      glob: 10.3.10
       global-agent: 3.0.0
       good-enough-parser: 1.1.23
-      google-auth-library: 9.0.0
+      google-auth-library: 9.1.0
       got: 11.8.6
       graph-data-structure: 3.3.0
       handlebars: 4.7.8
-      hasha: 5.2.2
       ignore: 5.2.4
       ini: 4.1.1
       js-yaml: 4.1.0
@@ -4845,7 +4842,7 @@ packages:
       klona: 2.0.6
       lru-cache: 10.0.1
       luxon: 3.4.3
-      markdown-it: 13.0.1
+      markdown-it: 13.0.2
       markdown-table: 2.0.0
       minimatch: 9.0.3
       moo: 0.5.2
@@ -4867,7 +4864,7 @@ packages:
       semver-stable: 3.0.0
       semver-utils: 1.1.4
       shlex: 2.1.2
-      simple-git: 3.19.1
+      simple-git: 3.20.0
       slugify: 1.6.6
       source-map-support: 0.5.21
       traverse: 0.6.7
@@ -4877,9 +4874,9 @@ packages:
       validate-npm-package-name: 5.0.0
       vuln-vects: 1.1.0
       xmldoc: 1.3.0
-      zod: 3.22.2
+      zod: 3.22.4
     optionalDependencies:
-      re2: 1.20.3
+      re2: 1.20.5
     transitivePeerDependencies:
       - '@aws-sdk/signature-v4-crt'
       - aws-crt
@@ -5082,8 +5079,8 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /simple-git@3.19.1:
-    resolution: {integrity: sha512-Ck+rcjVaE1HotraRAS8u/+xgTvToTuoMkT9/l9lvuP5jftwnYUp6DwuJzsKErHgfyRk8IB8pqGHWEbM3tLgV1w==}
+  /simple-git@3.20.0:
+    resolution: {integrity: sha512-ozK8tl2hvLts8ijTs18iFruE+RoqmC/mqZhjs/+V7gS5W68JpJ3+FCTmLVqmR59MaUQ52MfGQuWsIqfsTbbJ0Q==}
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
@@ -5682,8 +5679,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zod@3.22.2:
-    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: true
 
   /zwitch@1.0.5:
