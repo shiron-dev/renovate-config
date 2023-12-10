@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^3.1.0
     version: 3.1.0
   renovate:
-    specifier: ^37.89.2
-    version: 37.89.2(typanion@3.12.1)
+    specifier: ^37.89.3
+    version: 37.89.6(typanion@3.12.1)
 
 packages:
 
@@ -976,8 +976,8 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@cdktf/hcl2json@0.19.1:
-    resolution: {integrity: sha512-yQ5fTOK9aLuh3WsYV+ykqv0b1X+5KjqAgxaAU+f9pXNq3ght1Z6o7+jrBsPHpylcj318Bhl0Hc/PX3U/z6M2kg==}
+  /@cdktf/hcl2json@0.19.2:
+    resolution: {integrity: sha512-gFj36AshWSyPKq/eNjQtMnWj0QM0tPtMulFpQ0FrB+eWj0GvxgWg9d65gGCZ8Y/o33VV/2Kv5l8VlDEYDW2S7Q==}
     dependencies:
       fs-extra: 11.2.0
     dev: true
@@ -4280,6 +4280,12 @@ packages:
     hasBin: true
     dev: true
 
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
   /proc-log@3.0.0:
     resolution: {integrity: sha512-++Vn7NS4Xf9NacaU9Xq3URUuqZETPsf8L4j5/ckhaRYsfPeRyzGw+iDjFhV/Jr3uNmTvvddEJFWh5R1gRgUH8A==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
@@ -4448,8 +4454,8 @@ packages:
       - supports-color
     dev: true
 
-  /renovate@37.89.2(typanion@3.12.1):
-    resolution: {integrity: sha512-O/n6aISzF1i9X6xHTzKAdmFIm4GpAwNmzEP//NhIG2kHN9yDxrPfgCeUMDaSkAFvcrSN2akWEnJvDztkLWr2mw==}
+  /renovate@37.89.6(typanion@3.12.1):
+    resolution: {integrity: sha512-2H4WzHFWUTkttpE5f+l/RXZzlTquJUlBT/65QwqtFN45dD1t4pDeAnz14sv09gmdPGiIFv+LoL4aIQfIRk+QrQ==}
     engines: {node: ^18.12.0 || >=20.0.0, pnpm: ^8.0.0}
     hasBin: true
     dependencies:
@@ -4460,7 +4466,7 @@ packages:
       '@aws-sdk/client-s3': 3.363.0
       '@aws-sdk/credential-providers': 3.363.0
       '@breejs/later': 4.2.0
-      '@cdktf/hcl2json': 0.19.1
+      '@cdktf/hcl2json': 0.19.2
       '@opentelemetry/api': 1.7.0
       '@opentelemetry/context-async-hooks': 1.18.1(@opentelemetry/api@1.7.0)
       '@opentelemetry/exporter-trace-otlp-http': 0.45.1(@opentelemetry/api@1.7.0)
@@ -4538,7 +4544,7 @@ packages:
       p-queue: 6.6.2
       p-throttle: 4.1.1
       parse-link-header: 2.0.0
-      prettier: 3.1.0
+      prettier: 3.1.1
       redis: 4.6.11
       remark: 13.0.0
       remark-github: 10.1.0
