@@ -9,7 +9,7 @@ devDependencies:
     specifier: ^3.2.4
     version: 3.2.4
   renovate:
-    specifier: ^37.140.14
+    specifier: ^37.140.15
     version: 37.140.15(typanion@3.12.1)
 
 packages:
