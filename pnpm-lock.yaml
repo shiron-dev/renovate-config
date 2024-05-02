@@ -12,7 +12,7 @@ importers:
         specifier: ^3.2.5
         version: 3.2.5
       renovate:
-        specifier: ^37.327.2
+        specifier: ^37.329.0
         version: 37.334.1(@aws-sdk/client-sso-oidc@3.556.0(@aws-sdk/credential-provider-node@3.565.0))(@aws-sdk/client-sts@3.565.0(@aws-sdk/client-sso-oidc@3.556.0(@aws-sdk/credential-provider-node@3.565.0)))(encoding@0.1.13)(typanion@3.12.1)
 
 packages:
