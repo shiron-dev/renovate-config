@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^3.2.5
     version: 3.2.5
   renovate:
-    specifier: ^37.348.0
-    version: 37.348.0(@aws-sdk/client-sso-oidc@3.569.0)(@aws-sdk/client-sts@3.569.0)(typanion@3.14.0)
+    specifier: ^37.349.2
+    version: 37.354.1(@aws-sdk/client-sso-oidc@3.569.0)(@aws-sdk/client-sts@3.569.0)(typanion@3.14.0)
 
 packages:
 
@@ -24,7 +24,7 @@ packages:
     resolution: {integrity: sha512-IzSgsrxUcsrejQbPVilIKy16kAT52EwB6zSaI+M3xxIhKh5+aldEyvI+z6erM7TCLB2BJsFrtHjp6/4/sr+3dA==}
     dependencies:
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.567.0
       tslib: 1.14.1
     dev: true
 
@@ -32,7 +32,7 @@ packages:
     resolution: {integrity: sha512-ENNPPManmnVJ4BTXlOjAgD7URidbAznURqD0KvfREyc4o20DPYdEldU1f5cQ7Jbj0CJJSPaMIk/9ZshdB3210w==}
     dependencies:
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.567.0
       tslib: 1.14.1
     dev: true
 
@@ -48,7 +48,7 @@ packages:
       '@aws-crypto/ie11-detection': 3.0.0
       '@aws-crypto/supports-web-crypto': 3.0.0
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.567.0
       '@aws-sdk/util-locate-window': 3.568.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
@@ -61,7 +61,7 @@ packages:
       '@aws-crypto/sha256-js': 3.0.0
       '@aws-crypto/supports-web-crypto': 3.0.0
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.567.0
       '@aws-sdk/util-locate-window': 3.568.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
@@ -71,7 +71,7 @@ packages:
     resolution: {integrity: sha512-PnNN7os0+yd1XvXAy23CFOmTbMaDxgxXtTKHybrJ39Y8kGzBATgBFibWJKH6BhytLI/Zyszs87xCOBNyBig6vQ==}
     dependencies:
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.567.0
       tslib: 1.14.1
     dev: true
 
@@ -84,7 +84,7 @@ packages:
   /@aws-crypto/util@3.0.0:
     resolution: {integrity: sha512-2OJlpeJpCR48CC8r+uKVChzs9Iungj9wkZrl8Z041DWEWvyIHILYKCPNzJghKsivj+S3mLo6BVc7mBNzdxA46w==}
     dependencies:
-      '@aws-sdk/types': 3.535.0
+      '@aws-sdk/types': 3.567.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
     dev: true
@@ -2580,8 +2580,8 @@ packages:
     dev: true
     optional: true
 
-  /@yarnpkg/core@4.0.3(typanion@3.14.0):
-    resolution: {integrity: sha512-O+WGCjB9aIBxdRMBxXdsIy08MW4RbxfCS2AfywWb8DPS9H0LICahUJgNAaE0fwCsW7/gNzQbLYlh9DQQwzONrA==}
+  /@yarnpkg/core@4.0.5(typanion@3.14.0):
+    resolution: {integrity: sha512-6ib9l8P30GxHvxZo3170hr5PCy2qQnI4N4lXwNJxJnV0i46UlgLA4hlGp/kFVttteATGeckfduIDyWZgjn9sPw==}
     engines: {node: '>=18.12.0'}
     dependencies:
       '@arcanis/slice-ansi': 1.1.1
@@ -2589,7 +2589,7 @@ packages:
       '@types/treeify': 1.0.3
       '@yarnpkg/fslib': 3.0.2
       '@yarnpkg/libzip': 3.0.1(@yarnpkg/fslib@3.0.2)
-      '@yarnpkg/parsers': 3.0.0
+      '@yarnpkg/parsers': 3.0.2
       '@yarnpkg/shell': 4.0.2(typanion@3.14.0)
       camelcase: 5.3.1
       chalk: 3.0.0
@@ -2629,14 +2629,6 @@ packages:
     dependencies:
       '@types/emscripten': 1.39.11
       '@yarnpkg/fslib': 3.0.2
-      tslib: 2.6.2
-    dev: true
-
-  /@yarnpkg/parsers@3.0.0:
-    resolution: {integrity: sha512-jVZa3njBv6tcOUw34nlUdUM/40wwtm/gnVF8rtk0tA6vNcokqYI8CFU1BZjlpFwUSZaXxYkrtuPE/f2MMFlTxQ==}
-    engines: {node: '>=18.12.0'}
-    dependencies:
-      js-yaml: 3.14.1
       tslib: 2.6.2
     dev: true
 
@@ -4531,6 +4523,10 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
+  /jsonc-parser@3.2.1:
+    resolution: {integrity: sha512-AilxAyFOAcK5wA1+LeaySVBrHsGQvUFCDWXKpZjzaL0PqW+xfBOttn8GNtWKFWqneyMZj41MWF9Kl6iPWLwgOA==}
+    dev: true
+
   /jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
     dependencies:
@@ -5582,8 +5578,8 @@ packages:
       - supports-color
     dev: true
 
-  /renovate@37.348.0(@aws-sdk/client-sso-oidc@3.569.0)(@aws-sdk/client-sts@3.569.0)(typanion@3.14.0):
-    resolution: {integrity: sha512-qDWVoOxb6NaArGm/gGXCNGVyrpZ6xNWK4F3Nz9qfYpaTIcPqjTFLUDlSBBDZoBx2asyZC6x4W2LIjoXDAwmG5A==}
+  /renovate@37.354.1(@aws-sdk/client-sso-oidc@3.569.0)(@aws-sdk/client-sts@3.569.0)(typanion@3.14.0):
+    resolution: {integrity: sha512-iWzXg7aBivjh3XH0JHcj0xEjZf7MOP49wK14CiztfL6H88GX+rBrvgb3lRbtp8R38u4hVkt1SlYMRCcJE6j8Yw==}
     engines: {node: ^18.12.0 || >=20.0.0, pnpm: ^9.0.0}
     hasBin: true
     dependencies:
@@ -5611,8 +5607,8 @@ packages:
       '@renovatebot/pep440': 3.0.20
       '@renovatebot/ruby-semver': 3.0.23
       '@sindresorhus/is': 4.6.0
-      '@yarnpkg/core': 4.0.3(typanion@3.14.0)
-      '@yarnpkg/parsers': 3.0.0
+      '@yarnpkg/core': 4.0.5(typanion@3.14.0)
+      '@yarnpkg/parsers': 3.0.2
       agentkeepalive: 4.5.0
       aggregate-error: 3.1.0
       auth-header: 1.0.0
@@ -5655,6 +5651,7 @@ packages:
       json-stringify-pretty-compact: 3.0.0
       json5: 2.2.3
       jsonata: 2.0.4
+      jsonc-parser: 3.2.1
       klona: 2.0.6
       lru-cache: 10.2.2
       luxon: 3.4.4
