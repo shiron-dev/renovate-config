@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/shiron-dev/renovate-config/compare/v1.0.0...v1.1.0) (2024-05-15)
+
+
+### Features
+
+* for gradle ([9faf048](https://github.com/shiron-dev/renovate-config/commit/9faf0482fd3d43d291f14ee65ece9f67156c0bf6))
+* unification of conf ([396d341](https://github.com/shiron-dev/renovate-config/commit/396d34181ac1fd21609dcc25652eb6df4a2b6f09))
+
 ## 1.0.0 (2024-01-14)
 
 
