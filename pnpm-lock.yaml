@@ -9,7 +9,7 @@ devDependencies:
     specifier: ^3.2.5
     version: 3.2.5
   renovate:
-    specifier: ^37.368.8
+    specifier: ^37.368.9
     version: 37.369.1(@aws-sdk/client-sso-oidc@3.569.0)(@aws-sdk/client-sts@3.569.0)(typanion@3.14.0)
 
 packages:
@@ -4152,6 +4152,7 @@ packages:
 
   /inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
     requiresBuild: true
     dependencies:
       once: 1.4.0
