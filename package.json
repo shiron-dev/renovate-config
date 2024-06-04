@@ -12,7 +12,7 @@
   "author": "shiron4710",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.0",
     "renovate": "^37.385.0"
   }
 }
