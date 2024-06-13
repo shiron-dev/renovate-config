@@ -10,6 +10,7 @@
     ":widenPeerDependencies",
     ":semanticCommitTypeAll(chore)"
   ],
+  "assignees": ["shiron-dev"],
   "stabilityDays": 3,
   "rangeStrategy": "bump",
   "packageRules": [
