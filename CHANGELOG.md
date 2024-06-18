@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/shiron-dev/renovate-config/compare/v1.1.0...v1.2.0) (2024-06-18)
+
+
+### Features
+
+* update auto assign ([594831c](https://github.com/shiron-dev/renovate-config/commit/594831c334bce1280d084d9eaee4882d61cb20ad))
+
 ## [1.1.0](https://github.com/shiron-dev/renovate-config/compare/v1.0.0...v1.1.0) (2024-05-17)
 
 
