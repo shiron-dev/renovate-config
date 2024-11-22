@@ -12,7 +12,7 @@ jobs:
       - name: Test
         run: pnpm test
 
-  fmt-check:
+  lint-check:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -20,8 +20,8 @@ jobs:
       - uses: shiron-dev/actions/setup-node@v1.1.0
       - name: Install package
         run: pnpm install --frozen-lockfile
-      - name: Format
-        run: pnpm fmt
+      - name: Lint
+        run: pnpm lint
 
   ci-req-check:
     runs-on: ubuntu-latest
@@ -39,7 +39,7 @@ jobs:
     timeout-minutes: 10
     needs:
       - test-check
-      - fmt-check
+      - lint-check
       - ci-req-check
     steps:
       - name: All status check

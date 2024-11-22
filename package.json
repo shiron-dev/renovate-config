@@ -2,17 +2,18 @@
   "name": "renovate-config",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "fmt": "prettier . --check",
-    "fmt:fix": "prettier . --write",
-    "test": "renovate-config-validator --strict"
-  },
-  "keywords": [],
   "author": "shiron4710",
   "license": "MIT",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "renovate-config-validator --strict"
+  },
   "devDependencies": {
-    "prettier": "^3.3.3",
+    "@shiron-dev/eslint-config": "^2.1.0",
+    "eslint": "^9.15.0",
     "renovate": "^38.142.7"
   }
 }
