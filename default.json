@@ -8,24 +8,36 @@
     ":automergeMinor",
     ":separateMajorReleases",
     ":widenPeerDependencies",
-    ":semanticCommitTypeAll(chore)"
+    ":semanticCommitTypeAll(chore)",
+    ":"
   ],
-  "assignees": ["shiron-dev"],
+  "assignees": [
+    "shiron-dev"
+  ],
   "stabilityDays": 3,
+  "platformAutomerge": false,
   "rangeStrategy": "bump",
   "packageRules": [
     {
       "matchUpdateTypes": "major",
-      "addLabels": ["major"]
+      "addLabels": [
+        "major"
+      ]
     }
   ],
   "npm": {
-    "extends": ["npm:unpublishSafe"],
+    "extends": [
+      "npm:unpublishSafe"
+    ],
     "packageRules": [
       {
         "groupName": "eslint",
-        "extends": ["packages:linters"],
-        "matchPackagePatterns": ["eslint"]
+        "extends": [
+          "packages:linters"
+        ],
+        "matchPackagePatterns": [
+          "eslint"
+        ]
       }
     ]
   }
