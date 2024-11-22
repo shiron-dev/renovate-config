@@ -1,23 +1,46 @@
 on: pull_request
 
 jobs:
-  ci:
+  test-check:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          run_install: false
-      - name: Setup node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: "pnpm"
+      - uses: shiron-dev/actions/setup-node@v1.1.0
+      - name: Install package
+        run: pnpm install --frozen-lockfile
+      - name: Test
+        run: pnpm test
+
+  fmt-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shiron-dev/actions/setup-node@v1.1.0
       - name: Install package
         run: pnpm install --frozen-lockfile
       - name: Format
         run: pnpm fmt
-      - name: Test
-        run: pnpm test
+
+  ci-req-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check all-status-check
+        run: |
+          diff \
+            <(yq ".jobs | del(.all-status-check) | keys.[]" .github/workflows/ci.yml) \
+            <(yq ".jobs.all-status-check.needs.[]" .github/workflows/ci.yml)
+
+  all-status-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs:
+      - test-check
+      - fmt-check
+      - ci-req-check
+    steps:
+      - name: All status check
+        run: echo "All status checks passed"
