@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/shiron-dev/renovate-config/compare/v1.2.0...v1.3.0) (2024-11-22)
+
+
+### Features
+
+* `platformAutomerge: false` ([#787](https://github.com/shiron-dev/renovate-config/issues/787)) ([e45d833](https://github.com/shiron-dev/renovate-config/commit/e45d833d12187777c1d8f9c9d5ba02ff546cbd69))
+
+
+### Bug Fixes
+
+* fix default.json extends miss ([#790](https://github.com/shiron-dev/renovate-config/issues/790)) ([e56afae](https://github.com/shiron-dev/renovate-config/commit/e56afae81a27122efe12ad8ceeed65caf97414ca))
+
 ## [1.2.0](https://github.com/shiron-dev/renovate-config/compare/v1.1.0...v1.2.0) (2024-06-18)
 
 
