@@ -8,7 +8,7 @@
     ":automergeMinor",
     ":separateMajorReleases",
     ":widenPeerDependencies",
-    ":semanticCommitTypeAll(chore)"
+    ":semanticCommits"
   ],
   "assignees": [
     "shiron-dev"
