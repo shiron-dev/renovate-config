@@ -12,8 +12,8 @@
     "test": "renovate-config-validator --strict"
   },
   "devDependencies": {
-    "@shiron-dev/eslint-config": "^2.1.0",
-    "eslint": "^9.17.0",
+    "@shiron-dev/eslint-config": "2.1.0",
+    "eslint": "9.17.0",
     "renovate": "^39.91.0"
   }
 }
