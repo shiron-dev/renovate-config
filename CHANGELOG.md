@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/shiron-dev/renovate-config/compare/v1.3.0...v1.4.0) (2025-01-09)
+
+
+### Features
+
+* `semanticCommitTypeAll(chore)` to `:semanticCommits` ([#873](https://github.com/shiron-dev/renovate-config/issues/873)) ([0835239](https://github.com/shiron-dev/renovate-config/commit/0835239dcc5e118db9b390720a13319f0bec66d0))
+
 ## [1.3.0](https://github.com/shiron-dev/renovate-config/compare/v1.2.0...v1.3.0) (2024-11-22)
 
 
