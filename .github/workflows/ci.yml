@@ -26,7 +26,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - uses: shiron-dev/actions/setup-node@v1.1.0
+      - uses: shiron-dev/actions/setup-node@80f5f1513667e3070306b37e57021218addf46cb # v1.1.0
       - name: Install package
         run: pnpm install --frozen-lockfile
       - name: Test
@@ -37,7 +37,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - uses: shiron-dev/actions/setup-node@v1.1.0
+      - uses: shiron-dev/actions/setup-node@80f5f1513667e3070306b37e57021218addf46cb # v1.1.0
       - name: Install package
         run: pnpm install --frozen-lockfile
       - name: Lint
