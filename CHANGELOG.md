@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.0](https://github.com/shiron-dev/renovate-config/compare/v1.4.0...v1.5.0) (2025-01-10)
+
+
+### Features
+
+* base on config:best-practices ([#875](https://github.com/shiron-dev/renovate-config/issues/875)) ([62f5620](https://github.com/shiron-dev/renovate-config/commit/62f5620e5971e7f90e5f8d3a4b65c8c02f4f9d7b))
+* official action ignores pin digest ([#880](https://github.com/shiron-dev/renovate-config/issues/880)) ([1826add](https://github.com/shiron-dev/renovate-config/commit/1826addc0c2ff7cc53b2f21c6875eb977f634773))
+
 ## [1.4.0](https://github.com/shiron-dev/renovate-config/compare/v1.3.0...v1.4.0) (2025-01-09)
 
 
