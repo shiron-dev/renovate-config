@@ -10,7 +10,7 @@
     ":widenPeerDependencies",
     ":semanticCommits"
   ],
-  "assignees": [
+  "reviewers": [
     "shiron-dev"
   ],
   "stabilityDays": 3,
