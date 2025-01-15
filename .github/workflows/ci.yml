@@ -1,25 +1,17 @@
 on: pull_request
 
 jobs:
-  renovate-dry-run:
+  all-status-check:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    needs:
+      - test-check
+      - lint-check
+      - ci-req-check
+      - renovate-dry-run
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-      - run: npm install renovate
-      - name: Dry-run Renovate
-        run: |
-          npx renovate '${{ github.repository }}' \
-            --dry-run=full \
-            --require-config=ignored
-        env:
-          RENOVATE_USERNAME: renovate[bot]
-          RENOVATE_GIT_AUTHOR: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
-          RENOVATE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RENOVATE_BASE_BRANCHES: ${{ github.sha }}
-          LOG_LEVEL: debug
-          RENOVATE_CONFIG_FILE: renovate.json
+      - name: All status check
+        run: echo "All status checks passed"
 
   test-check:
     runs-on: ubuntu-latest
@@ -54,14 +46,75 @@ jobs:
             <(yq ".jobs | del(.all-status-check) | keys.[]" .github/workflows/ci.yml) \
             <(yq ".jobs.all-status-check.needs.[]" .github/workflows/ci.yml)
 
-  all-status-check:
+  renovate-dry-run:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs:
-      - renovate-dry-run
-      - test-check
-      - lint-check
-      - ci-req-check
     steps:
-      - name: All status check
-        run: echo "All status checks passed"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm install renovate
+      - name: Dry-run Renovate
+        id: renovate-dry-run
+        run: |
+          RENOVATE_LOG=$(npx renovate --dry-run=full --require-config=ignored --platform=local)
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          {
+            echo "log<<$EOF"
+            echo "$RENOVATE_LOG"
+            echo "$EOF"
+          } >> "$GITHUB_OUTPUT"
+          echo "$RENOVATE_LOG"
+        env:
+          LOG_LEVEL: debug
+          LOG_FORMAT: json
+          RENOVATE_BASE_BRANCHES: ${{ github.head_ref }}
+          RENOVATE_CONFIG_FILE: default.json
+      - name: Check deps
+        id: check-deps
+        run: |
+          DEP_OUT=$( echo '${{ steps.renovate-dry-run.outputs.log }}'\
+            | jq --raw-output '
+              select(.msg == "packageFiles with updates") |
+              .config |
+              to_entries |
+              group_by(.key) |
+              map({
+                key: .[0].key,
+                files: map(.value) | flatten
+              }) |
+              map({
+                key,
+                files: .files | map({
+                  packageFile,
+                  deps: .deps | map({
+                    depName,
+                    currentValue,
+                    currentDigest
+                  })
+                })
+              })
+            ' )
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          {
+            echo "comment<<$EOF"
+            echo "$DEP_OUT" | jq -r '
+              .[] |
+              "<details><summary>\(.key)</summary><blockquote>\n" +
+              (.files | map(
+                "<details><summary>\(.packageFile)</summary>\n\n" +
+                (.deps | map(if .currentDigest then " - `\(.depName) \(.currentValue)@\(.currentDigest)`" else " - `\(.depName) \(.currentValue)`" end) | join("\n")) +
+                "\n</details>"
+              ) | join("\n\n") ) +
+              "\n</blockquote></details>"
+              '
+            echo "$EOF"
+          } >> "$GITHUB_OUTPUT"
+      - uses: marocchino/sticky-pull-request-comment@331f8f5b4215f0445d3c07b4967662a32a2d3e31 # v2.9.0
+        if: ${{ steps.check-deps.outputs.comment != '' }}
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ github.event.pull_request.number }}
+          header: deps-check
+          message: |
+            ## Renovate dry-run detected dependencies
+            ${{ steps.check-deps.outputs.comment }}
