@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/shiron-dev/renovate-config/compare/v1.5.0...v1.6.0) (2025-01-17)
+
+
+### Features
+
+* assignee to reviwer ([#885](https://github.com/shiron-dev/renovate-config/issues/885)) ([5412d66](https://github.com/shiron-dev/renovate-config/commit/5412d66f6226d76f7adca4c324b4ad2b362f9bc8))
+
 ## [1.5.0](https://github.com/shiron-dev/renovate-config/compare/v1.4.0...v1.5.0) (2025-01-10)
 
 
