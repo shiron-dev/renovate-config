@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@shiron-dev/eslint-config": "2.1.1",
-    "eslint": "9.19.0",
+    "eslint": "9.20.0",
     "renovate": "39.163.0"
   }
 }
