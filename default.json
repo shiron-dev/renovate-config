@@ -14,7 +14,7 @@
     "shiron-dev"
   ],
   "stabilityDays": 3,
-  "platformAutomerge": false,
+  "platformAutomerge": true,
   "rangeStrategy": "bump",
   "packageRules": [
     {
