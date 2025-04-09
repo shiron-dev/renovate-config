@@ -15,8 +15,8 @@ importers:
         specifier: 9.24.0
         version: 9.24.0
       renovate:
-        specifier: 39.233.4
-        version: 39.233.4(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 39.233.5
+        version: 39.233.5(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -1146,8 +1146,8 @@ packages:
   '@vue/shared@3.5.13':
     resolution: {integrity: sha512-/hnE/qP5ZoGpol0a5mDi45bOd7t3tjYJBjsgCsivow7D48cJeV5l05RD82lPqi7gRiphZM37rnhW1l6ZoCNNnQ==}
 
-  '@yarnpkg/core@4.3.0':
-    resolution: {integrity: sha512-7KdrddBCgYMT/rQePALrsWRmtKFvYH6dlEfftte0A1ItcQ6JVNsLBHIIzVlHxUQ9AyHMaVDt169zfBc7OzdMtw==}
+  '@yarnpkg/core@4.3.1':
+    resolution: {integrity: sha512-1C/Tw1SmUbC+82gL7BvOl0mpaacfu3MEwm6KWU4BaZWVFfz2OVFcAs/eKyljrv4IxJZ/fNyEU30sBLBpgkBDGA==}
     engines: {node: '>=18.12.0'}
 
   '@yarnpkg/fslib@3.1.2':
@@ -3223,8 +3223,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.233.4:
-    resolution: {integrity: sha512-ehg5d97oyTf0jFWv8kBqz5e/Scfq1vqGkhhMTmNK0MUNF8klyGgv18i7eO76+bOQzoS/ndwiJR9d+3QkL9p99g==}
+  renovate@39.233.5:
+    resolution: {integrity: sha512-x9I2k0MKZRCHxonLvXBBGHzxKrXJAaeRQ70EtrcqcCLyzCp1tWprjh1e3KcmFp4E4j+FLD43Uv3lTNOCAGqWkQ==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3824,11 +3824,6 @@ packages:
   yaml-eslint-parser@1.2.3:
     resolution: {integrity: sha512-4wZWvE398hCP7O8n3nXKu/vdq1HcH01ixYlCREaJL5NUMwQ0g3MaGFUBNSlmBtKmhbtVG/Cm6lyYmSVTEVil8A==}
     engines: {node: ^14.17.0 || >=16.0.0}
-
-  yaml@2.7.0:
-    resolution: {integrity: sha512-+hSoy/QHluxmC9kCIJyL/uyFmLmc+e5CFR5Wa+bpIhIj85LVb9ZH2nVnqrHoSvKogwODv0ClqZkmiSSaIH5LTA==}
-    engines: {node: '>= 14'}
-    hasBin: true
 
   yaml@2.7.1:
     resolution: {integrity: sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==}
@@ -5853,7 +5848,7 @@ snapshots:
 
   '@vue/shared@3.5.13': {}
 
-  '@yarnpkg/core@4.3.0(typanion@3.14.0)':
+  '@yarnpkg/core@4.3.1(typanion@3.14.0)':
     dependencies:
       '@arcanis/slice-ansi': 1.1.1
       '@types/semver': 7.5.8
@@ -8349,7 +8344,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.233.4(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.233.5(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.777.0
       '@aws-sdk/client-ec2': 3.779.0
@@ -8379,7 +8374,7 @@ snapshots:
       '@renovatebot/pep440': 4.1.0
       '@renovatebot/ruby-semver': 4.0.0
       '@sindresorhus/is': 4.6.0
-      '@yarnpkg/core': 4.3.0(typanion@3.14.0)
+      '@yarnpkg/core': 4.3.1(typanion@3.14.0)
       '@yarnpkg/parsers': 3.0.3
       agentkeepalive: 4.6.0
       aggregate-error: 3.1.0
@@ -9100,9 +9095,7 @@ snapshots:
     dependencies:
       eslint-visitor-keys: 3.4.3
       lodash: 4.17.21
-      yaml: 2.7.0
-
-  yaml@2.7.0: {}
+      yaml: 2.7.1
 
   yaml@2.7.1: {}
 
