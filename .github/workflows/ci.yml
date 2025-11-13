@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: shiron-dev/actions/setup-node@3478cc44402c5c590ce6732554e621558ac6d6e5 # v1.5.0
       - name: Install package
         run: pnpm install --frozen-lockfile
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: shiron-dev/actions/setup-node@3478cc44402c5c590ce6732554e621558ac6d6e5 # v1.5.0
       - name: Install package
         run: pnpm install --frozen-lockfile
@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Check all-status-check
         run: |
           diff \
@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: shiron-dev/actions/setup-node@3478cc44402c5c590ce6732554e621558ac6d6e5 # v1.5.0
       - name: Dry-run Renovate
         id: renovate-dry-run
