@@ -55,15 +55,17 @@ jobs:
       - name: Dry-run Renovate
         id: renovate-dry-run
         run: |
-          pnpx renovate --dry-run=full --require-config=ignored --platform=local
+          set +e
           RENOVATE_LOG=$(pnpx renovate --dry-run=full --require-config=ignored --platform=local)
+          EXIT_CODE=$?
+          echo "$RENOVATE_LOG"
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
           {
             echo "log<<$EOF"
             echo "$RENOVATE_LOG"
             echo "$EOF"
           } >> "$GITHUB_OUTPUT"
-          echo "$RENOVATE_LOG"
+          exit $EXIT_CODE
         env:
           LOG_LEVEL: debug
           LOG_FORMAT: json
