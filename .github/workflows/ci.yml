@@ -51,19 +51,21 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-      - run: npm install renovate
+      - uses: shiron-dev/actions/setup-node@3478cc44402c5c590ce6732554e621558ac6d6e5 # v1.5.0
       - name: Dry-run Renovate
         id: renovate-dry-run
         run: |
-          RENOVATE_LOG=$(npx renovate --dry-run=full --require-config=ignored --platform=local)
+          set +e
+          RENOVATE_LOG=$(pnpx renovate --dry-run=full --require-config=ignored --platform=local)
+          EXIT_CODE=$?
+          echo "$RENOVATE_LOG"
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
           {
             echo "log<<$EOF"
             echo "$RENOVATE_LOG"
             echo "$EOF"
           } >> "$GITHUB_OUTPUT"
-          echo "$RENOVATE_LOG"
+          exit $EXIT_CODE
         env:
           LOG_LEVEL: debug
           LOG_FORMAT: json
