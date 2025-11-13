@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/shiron-dev/renovate-config/compare/v1.6.0...v1.7.0) (2025-11-13)
+
+
+### Features
+
+* platformAutomerge to true ([#996](https://github.com/shiron-dev/renovate-config/issues/996)) ([496107a](https://github.com/shiron-dev/renovate-config/commit/496107a380dfc8bcde5383c4d88ccd16a1480452))
+
 ## [1.6.0](https://github.com/shiron-dev/renovate-config/compare/v1.5.0...v1.6.0) (2025-01-17)
 
 
