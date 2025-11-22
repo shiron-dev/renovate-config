@@ -18,7 +18,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
-      - uses: shiron-dev/actions/setup-node@d4699e9172f57041901ee67621672f9b27383874 # v1.5.1
+      - uses: shiron-dev/actions/setup-node@9e2029b6bf55740748a5eace94dc93d97a1496ba # v1.5.2
       - name: Install package
         run: pnpm install --frozen-lockfile
       - name: Test
@@ -29,7 +29,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
-      - uses: shiron-dev/actions/setup-node@d4699e9172f57041901ee67621672f9b27383874 # v1.5.1
+      - uses: shiron-dev/actions/setup-node@9e2029b6bf55740748a5eace94dc93d97a1496ba # v1.5.2
       - name: Install package
         run: pnpm install --frozen-lockfile
       - name: Lint
@@ -51,7 +51,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
-      - uses: shiron-dev/actions/setup-node@d4699e9172f57041901ee67621672f9b27383874 # v1.5.1
+      - uses: shiron-dev/actions/setup-node@9e2029b6bf55740748a5eace94dc93d97a1496ba # v1.5.2
       - name: Dry-run Renovate
         id: renovate-dry-run
         run: |
