@@ -15,8 +15,8 @@ importers:
         specifier: 9.39.1
         version: 9.39.1
       renovate:
-        specifier: 42.38.1
-        version: 42.38.1(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 42.39.0
+        version: 42.39.0(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -1318,8 +1318,8 @@ packages:
     resolution: {integrity: sha512-gYjt7OIqdM0PcttNYP2aVrr2G0bMALkBaoehD4BuRGjAOtipg0b6wHg1yNL+s5zSnLZZrGHOw4IrND8CD+3oIQ==}
     hasBin: true
 
-  better-sqlite3@12.4.6:
-    resolution: {integrity: sha512-gaYt9yqTbQ1iOxLpJA8FPR5PiaHP+jlg8I5EX0Rs2KFwNzhBsF40KzMZS5FwelY7RG0wzaucWdqSAJM3uNCPCg==}
+  better-sqlite3@12.5.0:
+    resolution: {integrity: sha512-WwCZ/5Diz7rsF29o27o0Gcc1Du+l7Zsv7SYtVPG0X3G/uUI1LqdxrQI7c9Hs2FWpqXXERjW9hp6g3/tH7DlVKg==}
     engines: {node: 20.x || 22.x || 23.x || 24.x || 25.x}
 
   bignumber.js@9.1.2:
@@ -3314,8 +3314,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@42.38.1:
-    resolution: {integrity: sha512-COJiJ7LoKkN/tM0ZO09Sqlxp1v0yUNouI5NIdookWKBV+UgjstVE9uS5HM8QRpV1dRnUibnf5A16jP2y56ZSBA==}
+  renovate@42.39.0:
+    resolution: {integrity: sha512-o9a6BZmg8R3bt0bXoTf/oFlOiGF0hPvY5UqGv3XsJbRKH9JANLTESLqhypbt01UmLtdrSIT2J4csFWOM+imHrA==}
     engines: {node: ^22.13.0 || ^24.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6096,7 +6096,7 @@ snapshots:
 
   baseline-browser-mapping@2.8.28: {}
 
-  better-sqlite3@12.4.6:
+  better-sqlite3@12.5.0:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 7.1.2
@@ -8452,7 +8452,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@42.38.1(encoding@0.1.13)(typanion@3.14.0):
+  renovate@42.39.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.940.0
       '@aws-sdk/client-ec2': 3.940.0
@@ -8574,7 +8574,7 @@ snapshots:
       yaml: 2.8.1
       zod: 3.25.76
     optionalDependencies:
-      better-sqlite3: 12.4.6
+      better-sqlite3: 12.5.0
       openpgp: 6.2.2
       re2: 1.22.3
     transitivePeerDependencies:
