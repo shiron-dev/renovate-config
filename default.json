@@ -21,23 +21,21 @@
   },
   "osvVulnerabilityAlerts": true,
   "packageRules": [{
-      "matchCategories": [
-        "vulnerability"
-      ],
-      "addLabels": [
-        "security"
-      ],
-      "stabilityDays": 0,
-      "dependencyDashboardApproval": false,
-      "rangeStrategy": "update-lockfile"
-    },
-    {
-      "matchUpdateTypes": "major",
-      "addLabels": [
-        "major"
-      ]
-    }
-  ],
+    "matchCategories": [
+      "vulnerability"
+    ],
+    "addLabels": [
+      "security"
+    ],
+    "stabilityDays": 0,
+    "dependencyDashboardApproval": false,
+    "rangeStrategy": "update-lockfile"
+  }, {
+    "matchUpdateTypes": "major",
+    "addLabels": [
+      "major"
+    ]
+  }],
   "npm": {
     "extends": [
       "npm:unpublishSafe"
