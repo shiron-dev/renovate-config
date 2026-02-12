@@ -7,11 +7,24 @@ jobs:
     needs:
       - test-check
       - lint-check
-      - ci-req-check
       - renovate-dry-run
+    if: ${{ always() }}
     steps:
-      - name: All status check
-        run: echo "All status checks passed"
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+      - name: Check all-status-check
+        run: |
+          diff \
+            <(yq ".jobs | del(.all-status-check) | keys.[]" .github/workflows/ci.yml) \
+            <(yq ".jobs.all-status-check.needs.[]" .github/workflows/ci.yml)
+      - name: Fail if any needed job failed
+        env:
+          JOBS: ${{ toJson(needs) }}
+        run: |
+          for result in $(jq -r '.[].result' <<<"$JOBS"); do
+            if [[ ! "$result" =~ ^(success|skipped)$ ]]; then
+              exit 1
+            fi
+          done
 
   test-check:
     runs-on: ubuntu-latest
@@ -34,17 +47,6 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Lint
         run: pnpm lint
-
-  ci-req-check:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v6
-      - name: Check all-status-check
-        run: |
-          diff \
-            <(yq ".jobs | del(.all-status-check) | keys.[]" .github/workflows/ci.yml) \
-            <(yq ".jobs.all-status-check.needs.[]" .github/workflows/ci.yml)
 
   renovate-dry-run:
     runs-on: ubuntu-latest
