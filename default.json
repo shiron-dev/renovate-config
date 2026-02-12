@@ -16,6 +16,9 @@
   "stabilityDays": 3,
   "platformAutomerge": true,
   "rangeStrategy": "bump",
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "matchUpdateTypes": "major",
