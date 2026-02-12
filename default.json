@@ -19,7 +19,18 @@
   "vulnerabilityAlerts": {
     "enabled": true
   },
-  "packageRules": [
+  "osvVulnerabilityAlerts": true,
+  "packageRules": [{
+      "matchCategories": [
+        "vulnerability"
+      ],
+      "addLabels": [
+        "security"
+      ],
+      "stabilityDays": 0,
+      "dependencyDashboardApproval": false,
+      "rangeStrategy": "update-lockfile"
+    },
     {
       "matchUpdateTypes": "major",
       "addLabels": [
