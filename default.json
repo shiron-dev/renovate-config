@@ -19,14 +19,23 @@
   "vulnerabilityAlerts": {
     "enabled": true
   },
-  "packageRules": [
-    {
-      "matchUpdateTypes": "major",
-      "addLabels": [
-        "major"
-      ]
-    }
-  ],
+  "osvVulnerabilityAlerts": true,
+  "packageRules": [{
+    "matchCategories": [
+      "vulnerability"
+    ],
+    "addLabels": [
+      "security"
+    ],
+    "stabilityDays": 0,
+    "dependencyDashboardApproval": false,
+    "rangeStrategy": "update-lockfile"
+  }, {
+    "matchUpdateTypes": "major",
+    "addLabels": [
+      "major"
+    ]
+  }],
   "npm": {
     "extends": [
       "npm:unpublishSafe"
