@@ -20,6 +20,9 @@
     "enabled": true
   },
   "osvVulnerabilityAlerts": true,
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [{
     "matchCategories": [
       "vulnerability"
