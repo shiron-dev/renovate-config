@@ -13,7 +13,7 @@
   "reviewers": [
     "shiron-dev"
   ],
-  "stabilityDays": 3,
+  "minimumReleaseAge": "3 days",
   "platformAutomerge": true,
   "rangeStrategy": "bump",
   "vulnerabilityAlerts": {
@@ -30,7 +30,7 @@
     "addLabels": [
       "security"
     ],
-    "stabilityDays": 0,
+    "minimumReleaseAge": null,
     "dependencyDashboardApproval": false,
     "rangeStrategy": "update-lockfile"
   }, {
@@ -41,7 +41,7 @@
   }],
   "npm": {
     "extends": [
-      "npm:unpublishSafe"
+      "security:minimumReleaseAgeNpm"
     ],
     "packageRules": [
       {
@@ -49,8 +49,8 @@
         "extends": [
           "packages:linters"
         ],
-        "matchPackagePatterns": [
-          "eslint"
+        "matchPackageNames": [
+          "/eslint/"
         ]
       }
     ]
