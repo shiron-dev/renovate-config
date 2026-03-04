@@ -54,11 +54,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: shiron-dev/actions/setup-node@9e2029b6bf55740748a5eace94dc93d97a1496ba # v1.5.2
+      - name: Install package
+        run: pnpm install --frozen-lockfile
       - name: Dry-run Renovate
         id: renovate-dry-run
         run: |
           set +e
-          RENOVATE_LOG=$(pnpx renovate --dry-run=full --require-config=ignored --platform=local)
+          RENOVATE_LOG=$(pnpm exec renovate --dry-run=full --require-config=ignored --platform=local)
           EXIT_CODE=$?
           echo "$RENOVATE_LOG"
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
@@ -124,11 +126,13 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: main
+      - name: Install package (main)
+        run: pnpm install --frozen-lockfile
       - name: Dry-run Renovate (main)
         id: renovate-dry-run-main
         run: |
           set +e
-          RENOVATE_LOG=$(pnpx renovate --dry-run=full --require-config=ignored --platform=local)
+          RENOVATE_LOG=$(pnpm exec renovate --dry-run=full --require-config=ignored --platform=local)
           echo "$RENOVATE_LOG"
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
           {
