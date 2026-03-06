@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.1](https://github.com/shiron-dev/renovate-config/compare/v1.7.0...v1.7.1) (2026-03-04)
+
+
+### Bug Fixes
+
+* **ci:** use pnpm exec instead of pnpx for renovate dry-run ([#1171](https://github.com/shiron-dev/renovate-config/issues/1171)) ([cbc4f02](https://github.com/shiron-dev/renovate-config/commit/cbc4f026cc8158784b302ef21c611fe67a610117))
+* **config:** migrate deprecated options for renovate v43 compatibility ([#1174](https://github.com/shiron-dev/renovate-config/issues/1174)) ([3da7fe1](https://github.com/shiron-dev/renovate-config/commit/3da7fe1fceac339527cf860729ec2ad1f333c014))
+
 ## [1.7.0](https://github.com/shiron-dev/renovate-config/compare/v1.6.0...v1.7.0) (2025-11-13)
 
 
