@@ -58,15 +58,6 @@
   "github-actions": {
     "extends": [
       "helpers:pinGitHubActionDigests"
-    ],
-    "packageRules": [
-      {
-        "groupName": "official actions",
-        "matchPackageNames": [
-          "/^actions//"
-        ],
-        "pinDigests": false
-      }
     ]
   }
 }
