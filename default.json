@@ -38,6 +38,13 @@
     "addLabels": [
       "major"
     ]
+  }, {
+    "description": "Update shiron-dev's own dependencies immediately without the release-age delay",
+    "matchPackageNames": [
+      "shiron-dev/**"
+    ],
+    "minimumReleaseAge": null,
+    "dependencyDashboardApproval": false
   }],
   "npm": {
     "extends": [
