@@ -1,0 +1,11 @@
+allowBuilds:
+  better-sqlite3: true
+  core-js-pure: false
+  dtrace-provider: false
+  protobufjs: false
+  re2: true
+
+minimumReleaseAgeExclude:
+  - '@shiron-dev/*'
+
+shellEmulator: true

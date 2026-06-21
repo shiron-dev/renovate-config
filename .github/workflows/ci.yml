@@ -81,8 +81,10 @@ jobs:
           RENOVATE_CONFIG_FILE: default.json
       - name: Check deps
         id: check-deps
+        env:
+          RENOVATE_LOG: ${{ steps.renovate-dry-run.outputs.log }}
         run: |
-          DEP_OUT=$( echo '${{ steps.renovate-dry-run.outputs.log }}'\
+          DEP_OUT=$( printf '%s\n' "$RENOVATE_LOG" \
             | jq --raw-output '
               select(.msg == "packageFiles with updates") |
               .config |
@@ -131,6 +133,22 @@ jobs:
         if: github.event_name == 'pull_request'
         with:
           ref: main
+      - name: Configure pnpm policy (main)
+        if: github.event_name == 'pull_request'
+        run: |
+          cat > pnpm-workspace.yaml <<'YAML'
+          allowBuilds:
+            better-sqlite3: true
+            core-js-pure: false
+            dtrace-provider: false
+            protobufjs: false
+            re2: true
+
+          minimumReleaseAgeExclude:
+            - '@shiron-dev/*'
+
+          shellEmulator: true
+          YAML
       - name: Install package (main)
         if: github.event_name == 'pull_request'
         run: pnpm install --frozen-lockfile
@@ -154,8 +172,10 @@ jobs:
           RENOVATE_CONFIG_FILE: default.json
       - name: Check deps (main)
         if: github.event_name == 'pull_request'
+        env:
+          RENOVATE_LOG: ${{ steps.renovate-dry-run-main.outputs.log }}
         run: |
-          DEP_OUT=$( echo '${{ steps.renovate-dry-run-main.outputs.log }}'\
+          DEP_OUT=$( printf '%s\n' "$RENOVATE_LOG" \
             | jq --raw-output '
               select(.msg == "packageFiles with updates") |
               .config |
