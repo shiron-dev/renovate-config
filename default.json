@@ -45,6 +45,19 @@
     ],
     "minimumReleaseAge": null,
     "dependencyDashboardApproval": false
+  }, {
+    "description": "Keep shiron-dev/actions self-references on branch refs",
+    "matchManagers": [
+      "github-actions"
+    ],
+    "matchPackageNames": [
+      "shiron-dev/actions",
+      "shiron-dev/actions/**"
+    ],
+    "matchRepositories": [
+      "shiron-dev/actions"
+    ],
+    "pinDigests": false
   }],
   "npm": {
     "extends": [
