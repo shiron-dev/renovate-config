@@ -81,8 +81,10 @@ jobs:
           RENOVATE_CONFIG_FILE: default.json
       - name: Check deps
         id: check-deps
+        env:
+          RENOVATE_LOG: ${{ steps.renovate-dry-run.outputs.log }}
         run: |
-          DEP_OUT=$( echo '${{ steps.renovate-dry-run.outputs.log }}'\
+          DEP_OUT=$( printf '%s\n' "$RENOVATE_LOG" \
             | jq --raw-output '
               select(.msg == "packageFiles with updates") |
               .config |
@@ -154,8 +156,10 @@ jobs:
           RENOVATE_CONFIG_FILE: default.json
       - name: Check deps (main)
         if: github.event_name == 'pull_request'
+        env:
+          RENOVATE_LOG: ${{ steps.renovate-dry-run-main.outputs.log }}
         run: |
-          DEP_OUT=$( echo '${{ steps.renovate-dry-run-main.outputs.log }}'\
+          DEP_OUT=$( printf '%s\n' "$RENOVATE_LOG" \
             | jq --raw-output '
               select(.msg == "packageFiles with updates") |
               .config |
