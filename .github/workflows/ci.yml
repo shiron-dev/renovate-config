@@ -133,6 +133,22 @@ jobs:
         if: github.event_name == 'pull_request'
         with:
           ref: main
+      - name: Configure pnpm policy (main)
+        if: github.event_name == 'pull_request'
+        run: |
+          cat > pnpm-workspace.yaml <<'YAML'
+          allowBuilds:
+            better-sqlite3: true
+            core-js-pure: false
+            dtrace-provider: false
+            protobufjs: false
+            re2: true
+
+          minimumReleaseAgeExclude:
+            - '@shiron-dev/*'
+
+          shellEmulator: true
+          YAML
       - name: Install package (main)
         if: github.event_name == 'pull_request'
         run: pnpm install --frozen-lockfile
